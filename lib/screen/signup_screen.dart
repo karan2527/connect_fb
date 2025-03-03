@@ -1,12 +1,9 @@
 import 'package:connect_fb/colors.dart';
 import 'package:connect_fb/domain/app_utils.dart';
+import 'package:connect_fb/screen/login_screen.dart';
 import 'package:connect_fb/widget/custom_text_field.dart';
-import 'package:connect_firebase/colors.dart';
-import 'package:connect_firebase/domain/app_utils.dart';
-import 'package:connect_firebase/screen/login_screen.dart';
-import 'package:connect_firebase/widgets/custom_text_field.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 

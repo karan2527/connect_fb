@@ -12,7 +12,20 @@
           "package_name": "com.example.connect_fb"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "356757392729-o8d983tt19ni0bkcmktt31dn9nh7u9o9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.connect_fb",
+            "certificate_hash": "eab5d0d728e87bebff4dbfbf637c911d66d8de7d"
+          }
+        },
+        {
+          "client_id": "356757392729-8utpcsmcifb0oq6dg4ieo8vgfgc1mkkn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCYqC2-VtiMZCC7ZaCCzaGqo6ocv8lHzY4"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356757392729-8utpcsmcifb0oq6dg4ieo8vgfgc1mkkn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "356757392729-ujvdpqssm6go1qcfv859u2e6upu7c1er.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.connectFb"
+              }
+            }
+          ]
         }
       }
     }

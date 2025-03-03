@@ -1,4 +1,5 @@
-import 'package:connect_firebase/screen/signup_screen.dart';
+import 'package:connect_fb/screen/signup_screen.dart';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';

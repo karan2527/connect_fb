@@ -1,6 +1,6 @@
 import 'package:connect_fb/screen/signup_screen.dart';
 import 'package:connect_fb/widget/custom_text_field.dart';
-import 'package:connect_firebase/screen/password_foget_screen.dart';
+import 'package:connect_fb/screen/password_forget_screen.dart';
 import 'package:connect_firebase/screen/signup_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -110,7 +110,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => PasswordFogetScreen()));
+                                  builder: (context) => PasswordForgetScreen()));
                         },
                         child: Text(
                           "Forget Password?",
