@@ -65,7 +65,9 @@ flutter:
   assets:
     - assets/image/login.png
     - assets/image/signup.png
-    - assets/icon
+    - assets/icon/facebook.png
+    - assets/icon/google.png
+    - assets/icon/instagram.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

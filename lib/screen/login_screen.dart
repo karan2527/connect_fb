@@ -1,7 +1,9 @@
+import 'package:connect_fb/screen/home_screen.dart';
+import 'package:connect_fb/screen/password_foget_screen.dart';
 import 'package:connect_fb/screen/signup_screen.dart';
 import 'package:connect_fb/widget/custom_text_field.dart';
-import 'package:connect_fb/screen/password_forget_screen.dart';
-import 'package:connect_firebase/screen/signup_screen.dart';
+
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -9,8 +11,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 
 import '../colors.dart';
 import '../domain/app_utils.dart';
-import '../widgets/custom_text_field.dart';
-import 'home_screen.dart';
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -110,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => PasswordForgetScreen()));
+                                  builder: (context) => PasswordFogetScreen()));
                         },
                         child: Text(
                           "Forget Password?",
@@ -146,17 +147,15 @@ class _LoginScreenState extends State<LoginScreen> {
                               UserCredential userCredential =
                                   await auth.signInWithEmailAndPassword(
                                       email: email, password: password);
-                              if (userCredential != null) {
-                                ScaffoldMessenger.of(context)
-                                    .showSnackBar(const SnackBar(
-                                  content: Text("Successfully Login"),
-                                  backgroundColor: Colors.green,
-                                ));
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => HomeScreen()));
-                              }
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(const SnackBar(
+                                content: Text("Successfully Login"),
+                                backgroundColor: Colors.green,
+                              ));
+                              Navigator.pushReplacement(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomeScreen()));
                             },
                             child: Row(
                               children: [
