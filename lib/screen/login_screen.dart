@@ -144,9 +144,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               var email = emailController.text;
                               var password = passwordController.text;
                               FirebaseAuth auth = FirebaseAuth.instance;
-                              UserCredential userCredential =
-                                  await auth.signInWithEmailAndPassword(
-                                      email: email, password: password);
+                              await auth.signInWithEmailAndPassword(
+                                  email: email, password: password);
                               ScaffoldMessenger.of(context)
                                   .showSnackBar(const SnackBar(
                                 content: Text("Successfully Login"),
